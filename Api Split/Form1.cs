@@ -29,11 +29,11 @@ namespace Api_Split
                 foreach (var item in Words)
                 {
                     string WordsInSentence = item;
-                    foreach(char CharacterInWord in WordsInSentence)
+                    foreach (char CharacterInWord in WordsInSentence)
                     {
                         if (CharacterInWord == Character)
                         {
-                            LbiListOfWords.Text += WordsInSentence+" ";
+                            LbiListOfWords.Text += WordsInSentence + " ";
                             break;
                         }
                     }
@@ -47,7 +47,7 @@ namespace Api_Split
 
         private void BtnNumberOfLetter_Click(object sender, EventArgs e)
         {
-            if (TxtCharacter != null) 
+            if (TxtCharacter != null)
             {
                 int NumberOfLetter = 0;
                 string InputSentence = TxtSentence.Text;
@@ -62,7 +62,7 @@ namespace Api_Split
                         if (CharacterInWord == Character)
                         {
                             NumberOfLetter++;
-                          
+
                         }
                     }
                 }
